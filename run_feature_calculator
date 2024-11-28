@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# runs calculatefeatures.py for each network file in data folder
+# and saves it into a corresponding file in data/features
+
+# for <file> in data (ending with .mtx or .edges):
+# 	python3 src/featurecalc.py > data/features/<file>_features.txt

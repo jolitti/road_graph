@@ -1,2 +1,4 @@
 7 nov:  Marco and Eddie created the repo/wrote the initial proposal
 12 nov: All participants finalized the initial proposal
+26 nov: Marco downloaded datasets
+28 nov: Marco and Eddie outlined the file structure for the feature calculators
