@@ -2,3 +2,4 @@
 12 nov: All participants finalized the initial proposal
 26 nov: Marco downloaded datasets
 28 nov: Marco and Eddie outlined the file structure for the feature calculators
+29 nov: Marco started work on closeness centrality calculator
