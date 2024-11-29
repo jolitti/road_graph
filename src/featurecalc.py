@@ -5,8 +5,9 @@
 # example of feature calculator import
 from feature_calculators.template import calculate_feature as template_feature
 # import additional calculators below
+from feature_calculators.closeness import calculate_feature as closeness_centrality
 
-calculators = [ template_feature, ] # add as we write
+calculators = [ template_feature, closeness_centrality] # add as we write
 
 # ---------------------------------------------
 
