@@ -12,13 +12,11 @@ calculators = [ template_feature, closeness_centrality, betweenness_centrality] 
 from sys import argv
 import networkx as nx
 
-import igraph as ig
-from igraph import GraphBase
+
 
 # read network file
 assert len(argv)>=2
-#G = nx.read_adjlist(argv[1], comments='#',nodetype=int)
-G = GraphBase.Read_Ncol(f=argv[1], directed=False)  #WATCH OUT THE COMMENTS ON THE FILES! (Unfortunately, Read_Ncol doesn't have a parameter for the comments as nx.read_adjlist has...)
+G = nx.read_adjlist(argv[1], comments='#',nodetype=int)
 features = []
 for c in calculators:
     features += c(G)
