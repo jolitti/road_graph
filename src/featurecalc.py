@@ -13,10 +13,17 @@ from sys import argv
 import networkx as nx
 
 
-
 # read network file
 assert len(argv)>=2
-G = nx.read_adjlist(argv[1], comments='#',nodetype=int)
+G = nx.read_adjlist(argv[1], comments='%',nodetype=int)
+
+# Check if the graph is connected
+if(nx.is_connected(G)):
+    print("The graph is connected")
+else:
+    print("NO!! The graph is NOT connected!!!!!")
+
+
 features = []
 for c in calculators:
     features += c(G)
