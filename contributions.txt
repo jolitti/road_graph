@@ -6,3 +6,4 @@
 10 dec: Eddie started working on betweenness centrality calculation
 12 dec: Eddie tried to use igraph to reduce computational time
 16 dec: Eddie started searching for infos about random graphs
+17 dec: Eddie started the mid-term report
