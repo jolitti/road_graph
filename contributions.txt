@@ -7,3 +7,5 @@
 12 dec: Eddie tried to use igraph to reduce computational time
 16 dec: Eddie started searching for infos about random graphs
 17-20 dec: Eddie did the mid-term report
+
+7 jan: Marco implemented the builtin feature calculator and the run script

@@ -1,7 +1,18 @@
-#!/bin/sh
+#!/bin/bash
 
 # runs calculatefeatures.py for each network file in data folder
 # and saves it into a corresponding file in data/features
 
 # for <file> in data (ending with .mtx or .edges):
 # 	python3 src/featurecalc.py > data/features/<file>_features.txt
+
+for file in data/*.mtx
+do
+    echo "Processing $file"
+
+    newpath="data/features/${file%.mtx}_features.txt"
+    touch newpath
+    python3.11 src/featurecalc.py "$file" > newpath
+
+    echo "Processed $file, features saved in $newpath"
+done
