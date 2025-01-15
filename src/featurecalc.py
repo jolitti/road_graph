@@ -31,14 +31,14 @@ txt_file = open(os.path.join(data_dir, file_name),"a")
 
 
 for file in files:
-    print("Working in file", file)
+    print("Working in file ", file)
     G = nx.read_adjlist(os.path.join(data_dir, file), comments='%',nodetype=int)
 
     features = []
     for c in calculators:
         features += c(G)
 
-    txt_file.write("Features for file" + file + '\n')
+    txt_file.write("Features for file " + file + '\n')
     for name,value in features:
         print(name,value)
         txt_file.write(name + " " + str(value) + '\n')
