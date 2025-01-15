@@ -4,7 +4,7 @@
 28 nov: Marco and Eddie outlined the file structure for the feature calculators
 29 nov: Marco started work on closeness centrality calculator
 10 dec: Eddie started working on betweenness centrality calculation
-12 dec: Eddie tried to use igraph to reduce computational time
+12 dec: Eddie tried to use igraph and cugraph to reduce computational time
 16 dec: Eddie started searching for infos about random graphs
 17-20 dec: Eddie did the mid-term report
 
